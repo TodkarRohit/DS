@@ -37,7 +37,7 @@ int main()
     }
 
     
-    cout << "\n----- Student Details -----\n";
+    cout << "\n Student Details \n";
 
     for(int i = 0; i < n; i++)
     {
