@@ -1,12 +1,14 @@
 #include<iostream>
 using namespace std;
+
 class Node
 {
   public:
+    int data;
     Node *next;
     Node(int value)
       {
-        int data = value ;
+        data = value;
         next = NULL;
       }
 }; //class node
@@ -14,27 +16,27 @@ class Node
 class LinkedList
 {
   public:
-  Node *head;
-  LinkedList()
-{
-  head = NULL;
-}
-void add(int value)
-{
-  Node *n1 = new node(value);
-  if(head==NULL)
+    Node *head;
+    LinkedList()
   {
-    head=n1;
-    return;
+    head = NULL;
   }
 
-  Node *temp = head;
-  while(temp->next!=NULL)
-    {  
-      temp = temp->next;
+  void add(int value)
+  {
+    Node *n1 = new Node(value);
+    if(head==NULL)
+    {
+      head = n1;
+      return;
     }
-    temp->n1;
-  
+
+    Node *temp = head;
+    while(temp->next!=NULL)
+      {  
+        temp = temp->next;
+      }
+      temp->next = n1;
 }// Add
 
 void display()
@@ -42,21 +44,21 @@ void display()
   Node *temp = head;
   if(head == NULL)
   {
-    std::cout<<"LL is empty";
+    cout<<"LL is empty";
     return;
   }
   while(temp!=NULL)
     {
-      std::cout<<temp->data<<"->";
+      cout<<temp->data<<"->";
       temp=temp->next;
     }
-      std::cout<<"Null";
+      cout<<"Null";
 }//display
 };//Class LinkedList
 
 int main()
 {
-  LinkedList l1 =new LinkedList;
+  LinkedList l1;
   l1.add(10);
   l1.add(1);
   l1.add(12);
