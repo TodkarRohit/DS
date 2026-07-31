@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-<<<<<<< HEAD
 class Node
 {
   public:
@@ -15,8 +14,7 @@ class Node
       next = NULL;
     }
 }; //class Node
-=======
->>>>>>> a4f588891b0ef83db9e8534b34a7617aa2a02215
+
 
 class LinkedList
 {
@@ -30,13 +28,40 @@ class LinkedList
         void add()
         {
             Node *n1 = new Node(value)
-        }
-
-
-
-};
+            if (head == NULL)
+            {
+                head = n1;
+                return;
+            }
+            Node *temp = head;
+            while (temp -> next != NULL)
+            {
+                temp = temp->next;
+            }
+            temp->next = n1;
+        }//add()
+        void display()
+        {
+            Node *temp = head;
+            if(head == NULL)
+            {
+                cout<<"LinkedList is Empty";
+                return;
+            }
+            while(temp!=NULL)
+            {
+                cout<<temp->data<<"->";
+                temp=temp->next;
+            }
+            cout<<"NULL";
+        } //display()
+}; //LinkedList 
 
 int main()
 {
+    LinkedList l1;
+    l1.add(1);
+    l1.add(2);
+    l1.display();
   return 0; 
 }
