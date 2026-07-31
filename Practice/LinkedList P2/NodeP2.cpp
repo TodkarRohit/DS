@@ -16,3 +16,10 @@ class Node
   }
 };// class Node
 
+class Linkedlist
+{
+  public:
+  
+}
+
+
