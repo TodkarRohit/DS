@@ -59,13 +59,12 @@ class LinkedList
 
 int main()
 {
-<<<<<<< HEAD
     LinkedList l1;
     l1.add(1);
     l1.add(2);
     l1.display();
-=======
-  int Attendance ;
+
+int Attendance ;
   int choice;
   
   cout<<"1. Insert Attendance \n2. Update Attendance \n3.Calculate Attendance \n4.Display complete Attendance List \n5.Exit";
@@ -102,6 +101,5 @@ int main()
   
   
   
->>>>>>> 071c061ee47c76ea9eee576554ca2af345fbaf55
   return 0; 
 }
