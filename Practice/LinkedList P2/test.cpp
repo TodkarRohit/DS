@@ -54,6 +54,9 @@ void display()
       temp=temp->next;
     }
       cout<<"Null";
+      
+      
+      
 }//display
 };//Class LinkedList
 
