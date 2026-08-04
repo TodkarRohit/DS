@@ -144,7 +144,7 @@ int main() {
 
         switch (choice) {
         case 1:
-            cout << "Enter attendance (P Present, A Absent): ";
+            cout << "Enter attendance (P-Present, A-Absent): ";
             cin >> status;
             studentRecord.insertAttendance(status);
             break;
