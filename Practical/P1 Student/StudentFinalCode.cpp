@@ -51,7 +51,7 @@ int main() {
             cout << "Enter CGPA: ";
             cin >> cgpa[pos - 1];
             n++;
-            cout << "Student Inserted." << endl;
+            cout << "\nStudent Inserted." << endl;
             break;
 
         case 2: {

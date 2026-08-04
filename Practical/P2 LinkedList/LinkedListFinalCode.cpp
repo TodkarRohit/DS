@@ -131,14 +131,15 @@ int main() {
     int choice, day;
     char status;
 
-    do {
+    
         cout << "\n=== Student Attendance Management System ===\n";
         cout << "1. Insert Attendance (P/A)\n";
         cout << "2. Update Attendance for a Day\n";
         cout << "3. Calculate Total Present/Absent Days\n";
         cout << "4. Display Complete Attendance List\n";
         cout << "5. Exit\n";
-        cout << "Enter your choice: ";
+  do {
+        cout << "\nEnter your choice: ";
         cin >> choice;
 
         switch (choice) {
