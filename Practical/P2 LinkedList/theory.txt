@@ -67,8 +67,11 @@ Iterates through all nodes from head to the tail and prints each entry in tabula
    * Check if head == nullptr; if so, display "No records found".
    * Print table headers (Day and Status).
    * Traverse with temp, printing temp->getDay() and converting status characters to full text ("Present" or "Absent").
+
 PAGE 3: COMPARISON & ADVANTAGES
+
 4. Comparison: Array vs. Singly Linked List
+
 | Feature | Array-Based System (Exp 1) | Linked List System (Exp 2) |
 |---|---|---|
 | Memory Allocation | Static / Contiguous allocation | Dynamic / Non-contiguous allocation |
@@ -76,7 +79,10 @@ PAGE 3: COMPARISON & ADVANTAGES
 | Insertion at End | O(1) | O(N) (without tail pointer) / O(1) (with tail pointer) |
 | Memory Overhead | Lower (stores data only) | Higher (stores data + pointer per node) |
 | Traversals | Direct index access O(1) | Sequential traversal O(N) |
+
+
 5. Summary Table of Operations
+
 | Operation | Time Complexity | Space Complexity | Primary Task |
 |---|---|---|---|
 | Insert at End | O(N) | O(1) | Traverse to tail node and link new dynamic node |
@@ -84,6 +90,8 @@ PAGE 3: COMPARISON & ADVANTAGES
 | Calculate Totals | O(N) | O(1) | Traverse entire list and aggregate present/absent counts |
 | Display List | O(N) | O(1) | Traverse from head to nullptr and output data |
 | Destructor Cleanup | O(N) | O(1) | Deallocate memory for all nodes to prevent memory leaks |
+
+
 PAGE 4: C++ PROGRAM SOURCE CODE
 #include <iostream>
 using namespace std;
