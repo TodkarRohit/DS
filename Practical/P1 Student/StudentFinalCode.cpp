@@ -21,13 +21,15 @@ int main() {
         cin >> cgpa[i];
     }
 
-    do {
+    
         cout << "\n----- Student Information System -----" << endl;
         cout << "1. Insert Student" << endl;
         cout << "2. Delete Student" << endl;
         cout << "3. Search Student" << endl;
         cout << "4. Display Students" << endl;
         cout << "5. Exit" << endl;
+    
+    do {
         cout << "Enter your choice: ";
         cin >> choice;
 
