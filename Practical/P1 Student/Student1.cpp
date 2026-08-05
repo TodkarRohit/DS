@@ -4,6 +4,7 @@ using namespace std;
 class student
 {
   public :
+
   int  rollno;
   string name;
   string branch;
