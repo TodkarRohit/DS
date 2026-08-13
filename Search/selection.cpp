@@ -20,15 +20,12 @@ int main()
                 min=j;         
             }
         }       
-         
-         
-       // temp=a[min];
-        //a[min]=a[i];
-       // a[i]=temp;
+       temp=a[min];
+       a[min]=a[i];
+       a[i]=temp;
     }   
-    cout<<a[i]<<" i \t";  
-          cout<<a[i]<<" j \t";  
-    cout << "SELECTION SORTED ARRAY :\t";   
+    
+    cout << "\nSELECTION SORTED ARRAY :\t";   
     for(i=0;i<5;i++) 
     {     
         cout<<a[i]<<"\t";   
