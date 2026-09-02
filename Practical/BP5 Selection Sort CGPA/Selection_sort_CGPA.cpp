@@ -36,7 +36,8 @@ public:
         return cgpa;
     }
 };
-
+ 
+ 
 class MeritList {
 private:
     Student* students;

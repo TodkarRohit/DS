@@ -1,0 +1,120 @@
+#include<iostream>
+using namespace std;
+#define MAX 100
+
+class Stack
+{
+   public:
+      string A[MAX];
+      int top;
+      Stack()
+      { 
+         top= -1;
+      }
+         
+        void push (string value)
+        {
+            if(top == MAX-1)
+            {
+               cout<<"History is Full"<<endl;
+            }
+            else
+            {
+              top++;
+              A[top]= value;
+              cout<<value<<" is recently visited"<<endl;
+            }
+        
+       }//push
+       void pop()
+       {
+          if(top == -1)
+          {
+             cout<<"No history found"<<endl;
+          }
+          else
+          {
+           cout<<A[top]<<" is deleted from history"<<endl;
+           top--;
+          }
+          
+       }//pop
+       
+        void peek()
+        {
+            if(top==-1)
+            {
+                cout<<"No history found"<<endl;
+            }
+            else
+            {
+                cout<<"Current page: "<<A[top]<<endl;
+            }
+        }
+       
+       void display()
+       {
+          if(top == -1)
+          {
+             cout<<"No history found"<<endl;
+          } 
+          else
+          {
+            for(int i=top; i>=0; i--)  cout<<A[i]<<endl;     
+          }
+        } //display
+}; // class
+
+int main()
+{
+    Stack s1;
+
+    cout<<" "<<endl;
+
+    s1.push("Google.com");
+    s1.push("Youtube.com");
+    s1.push("Github.com");
+    s1.push("ChatGPT.com");
+    
+
+    cout<<" "<<endl;
+    s1.display();
+    
+    cout<<" "<<endl;
+    s1.peek();
+    
+    cout<<" "<<endl;
+    s1.pop();
+    
+    cout<<" "<<endl;
+    s1.display();
+
+    return 0;
+}
+
+/*
+int  main()
+{
+int i,n,V, A[MAX];
+  Stack s1;
+
+  cout<<"Enter Nth Number\t";
+  cin>>n;
+  
+  for(i=0; i<n; i++){ 
+    cin>>V; 
+  }
+  for(i=0; i<n; i++) { 
+    s1.push(V);
+  }
+    
+  
+ cout<<" "<<endl;
+ 
+  s1.display();
+  //s1.pop();
+ // s1.display();
+return 0;
+} //main
+
+*/
