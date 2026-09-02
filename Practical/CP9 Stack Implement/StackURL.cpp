@@ -70,25 +70,24 @@ int main()
     Stack s1;
 
     cout<<" "<<endl;
-
+    cout<<"a. Visit a new page (push URL)\n"<<endl;
     s1.push("Google.com");
     s1.push("Youtube.com");
     s1.push("Github.com");
     s1.push("ChatGPT.com");
     
-
-    cout<<" "<<endl;
-    s1.display();
-    
-    cout<<" "<<endl;
-    s1.peek();
-    
-    cout<<" "<<endl;
+    cout<<"\nb. Go back to the previous page (pop URL)"<<endl;
     s1.pop();
     
-    cout<<" "<<endl;
+     cout<<" "<<endl;
+    cout<<"c. Display the current page"<<endl;
+    s1.peek();
+    
+     cout<<" "<<endl;
+    cout<<"d. Show the entire browsing history stack\n"<<endl;
     s1.display();
-
+    cout<<" "<<endl;
+    cout<<" "<<endl;
     return 0;
 }
 
