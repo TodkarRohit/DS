@@ -66,6 +66,67 @@ class Stack
 }; // class
 
 int main()
+{   
+    int n;
+    string U;
+    Stack s1;
+
+    cout<<" "<<endl;
+    cout<<"1. Visit a new page (push URL)\n"<<endl;
+  
+    
+    cout<<"\n2. Go back to the previous page (pop URL)"<<endl;
+    s1.pop();
+    
+    
+    cout<<"3. Display the current page"<<endl;
+    s1.peek();
+    
+     
+    cout<<"4. Show the entire browsing history stack\n"<<endl;
+    s1.display();
+    
+    cout<<"5. EXIT"<<endl;
+   
+   do
+   {
+        cout<<"Enter Choice"<<endl;
+        cin>>n;
+         switch(choice)
+      {
+        case 1:
+          cout << " SITE NAME \t";
+          cin >> U;
+          s1.push(U);          
+        break;
+  
+        case 2:
+        
+        break;
+  
+        case 3:
+        
+        break;
+  
+        case 4:
+        cout<<"Exit\n \n";
+        break;
+        
+        default: 
+        cout<<"Select Proper Option \n";
+        cout<<"----------------------------------------------------------------------------------- \n";
+        break;
+  
+      }
+    } while (choice != 5 );
+   }
+    return 0;
+}
+
+
+
+/*
+int main()
 {
     Stack s1;
 
@@ -91,7 +152,7 @@ int main()
     return 0;
 }
 
-/*
+
 int  main()
 {
 int i,n,V, A[MAX];
