@@ -84,29 +84,5 @@ int  main()
 return 0;
 }
 
-*/
-int  main()
-{
-int i,n,V, A[MAX];
-  Stack s1;
 
-  cout<<"Enter Nth Number\t";
-  cin>>n;
-  
-  for(i=0; i<n; i++){ 
-    cin>>V; 
-  }
-  for(i=0; i<n; i++) { 
-    s1.push(V);
-  }
-    
-  
- cout<<" "<<endl;
  
-  s1.display();
-  //s1.pop();
- // s1.display();
-return 0;
-} //main
-
-

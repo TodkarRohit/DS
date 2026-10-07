@@ -64,7 +64,7 @@ class Stack
           }
         } //display
 }; // class
-
+/*
 int main()
 {   
     int n;
@@ -125,7 +125,7 @@ int main()
 
 
 
-/*
+*/
 int main()
 {
     Stack s1;
@@ -177,4 +177,4 @@ int i,n,V, A[MAX];
 return 0;
 } //main
 
-*/
+

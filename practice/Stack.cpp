@@ -13,11 +13,8 @@ class Stack
     top = -1;
   }
   
-  bool isEmpty()
-  {
-    if (top==-1){
-      return  true;
-    }
+  bool isEmpty() {
+    if (top==-1) return  true;
     return false; 
   }
   
